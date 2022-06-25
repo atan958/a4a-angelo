@@ -1,0 +1,25 @@
+.carousel-container-container {
+    padding: 150px calc(100vw/2 - 250px);
+}
+
+.carousel-container {
+    width: 500px;
+    background-color: red;
+}
+
+.left-control {
+    position: absolute;
+    left: -100px;
+    background-color: none;
+}
+
+.right-control {
+    position: absolute;
+    left: 520px;
+    background-color: none;
+}
+
+.control:hover {
+    
+}
+

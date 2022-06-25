@@ -1,0 +1,67 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.hero video {
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.hero-shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.35);
+
+}
+
+.cta-title {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+
+    width: 740px;
+    height: 380px;
+
+    font-weight: 600;
+    font-size: 64px;
+
+    padding: 30px;
+
+    color: white;
+    text-align: center;
+
+    cursor: default;
+}
+
+.cta-title span {
+    color: rgb(255, 204, 75);
+}
+
+.cta-subtitle {
+    font-weight: 400;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 70%;
+    margin: 0 15%;
+    padding: 0;
+}
