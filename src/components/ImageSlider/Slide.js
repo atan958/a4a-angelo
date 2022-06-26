@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React from 'react'
 
 const Slide = ({slide, current, index, onHover, offHover}) => {
     return (

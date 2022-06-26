@@ -2,10 +2,11 @@ import React, {useEffect, useState} from 'react'
 
 import './ImageSlider.css'
 import Slide from './Slide';
+import SlideIndicator from './SlideIndicator';
 import SliderData from './SliderData'
 
 const ImageSlider = () => {
-    const [current, setCurrent] = useState(1);
+    const [current, setCurrent] = useState(0);
     const [isReading, setIsReading] = useState(false);
 
     useEffect(() => {
@@ -23,6 +24,7 @@ const ImageSlider = () => {
 
     const nextSlide = () => (current === SliderData.length - 1) ? setCurrent(0) : setCurrent(current => current+1);
     const prevSlide = () => (current === 0) ? setCurrent(SliderData.length - 1) : setCurrent(current => current-1);
+    const jumpSlide = (i) => setCurrent(i);
 
     return (
         <div className='slider'>
@@ -38,7 +40,12 @@ const ImageSlider = () => {
                 })}
                 <i className="slider-control right-control fas fa-angle-right fa-3x" onClick={nextSlide}/>
             </div>
-            <div>
+            <div className='indicator-container'>
+                {SliderData.map((slide,i) => {
+                    return (
+                        <SlideIndicator current={current} index={i} onClick={()=>jumpSlide(i)}/>
+                    );
+                })}
             </div>
         </div>
     )
