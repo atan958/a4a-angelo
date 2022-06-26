@@ -1,5 +1,5 @@
 .slider {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
 
@@ -29,38 +29,84 @@
     opacity: 0;
 
     height: 500px;
+    width: 600px;
 
     position: absolute;
     top: calc(40% - 200px);
     left: calc(50% - 300px);
+    z-index: 2;
 
     transform: scale(0.92);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.slide img{
+.active {
+    transition: 1s ease;
+    opacity: 1 !important;
+    z-index: 3 !important;
+    transform: scale(1);
+}
+
+.active:hover {
+    transform: scale(1.01);
+    transition: 0.4s ease;
+}
+
+.active:hover .slide-desc{
+    opacity: 1;
+}
+
+.slide-desc {
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: calc(100% - 100px);
+    width: 100%;
+    z-index: 3;
+
+    background-color: rgb(202, 175, 107);
+    opacity: 0;
+    transition: 0.4s ease;
+
+}
+
+.slide-desc p {
+    font-size: 24px;
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+.slide-img {
     object-fit: cover;
     width: 600px;
     height: 400px;
+    transition: 0.5s ease;
+}
+
+.details {
+    position: absolute;
+    height: 100px;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0 30px;
 }
 
 .slide h2 {
     width: 100%;
-    padding-left: 20px;
-    padding-top: 10px;
 }
 
 .slide h3 {
     width: 100%;
-    padding-left: 20px;
     color: grey;
     font-weight: 500;
-}
-
-.active {
-    transition: 1s ease;
-    opacity: 1;
-    transform: scale(1);
 }
 
 .left-control {
@@ -79,10 +125,16 @@
 
 .slider-control {
     cursor: pointer;
-    transition: 0.2s ease;
-    filter: invert(50%)
+    transition: 0.3s ease;
+    filter: drop-shadow(6px 6px 4px rgba(0, 0, 0, 0.5));
 }
 
 .slider-control:hover {
-    filter: invert(100%)
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    transform: scale(1.05);
+}
+
+.slider-control:active {
+    filter: invert(40%) drop-shadow(9px 9px 5px rgba(0, 0, 0, 0.5));
+    transform: scale(1.02);
 }
