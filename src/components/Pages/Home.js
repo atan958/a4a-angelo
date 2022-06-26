@@ -1,15 +1,13 @@
 import React from 'react'
 
 import Hero from '..//Hero/Hero'
-import Slider from '../Slider/Slider'
+import ImageSlider from '../ImageSlider/ImageSlider'
 
 const Home = () => {
   return (
     <>
         <Hero />
-        <div className="to-be-deleted">
-          <Slider/>
-        </div>
+        <ImageSlider/>
         <div className="to-be-deleted">
           
         </div>

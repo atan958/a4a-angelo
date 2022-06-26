@@ -8,5 +8,6 @@
 .to-be-deleted{
     height: 100vh;
     background-color: rgb(197, 197, 197);
+    background-image: linear-gradient(rgb(255, 169, 169), rgb(112, 165, 112));
 }
 
