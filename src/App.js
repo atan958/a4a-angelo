@@ -7,24 +7,28 @@ import {
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Carousel from './components/Carousel/Carousel';
+import Home from './components/Pages/Home';
 
 function App() {
   return (
-    <>
       <Router>
         <Navbar />
-        <Hero />
-        <div className="to-be-deleted">
-          <Carousel />
-        </div>
         <Routes>
-          <Route path='/' component={<div>Hello</div>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
         </Routes>
       </Router>  
-    </>
   );
 }
+
+/*
+        <Hero />
+        <div className="to-be-deleted">
+          <Slider/>
+        </div>
+        <div className="to-be-deleted">
+        </div>
+*/
 
 export default App;

@@ -4,8 +4,6 @@ import styled, { withTheme } from 'styled-components'
 
 import './Navbar.css'
 
-import Button from '../Button/Button.js'
-
 const logo = require('../../images/logo.png');
 const logoW = require('../../images/logo-w.png');
 
@@ -28,7 +26,6 @@ const Navbar = () => {
   * states
   */
   const [click, setClick] = useState(false);
-  const [menu, setMenu] = useState(false);
 
   /*
   * effects
@@ -63,20 +60,13 @@ const Navbar = () => {
 
   const handleClick = () => setClick(!click);
   
-
-
-
-
   return (
     <>
-        <nav className="navbar" style={{backgroundColor: bgColor && `rgba(204,164,61,${opacity})`}}>
-          <div className="navbar-container">
+        <nav className="navbar" >
+          <div className="navbar-container" style={{backgroundColor: bgColor && `rgba(204,164,61,${opacity})`}}>
             <Link to='/' className='navbar-logo'>
               <img src={bgColor ? logo : logoW} style={{height: bgColor ? '80px' : '140px'}}></img>
             </Link>
-            {menu && <div className='menu-icon' onClick={handleClick}>
-              <i className={click ? "fas fa-times" : "fas fa-bars"}/>
-            </div>}
             <ul className={`nav-menu ${click && 'active'}`}>
               <li className='nav-item'>
                 <Link to='/' className='nav-links' style={linkStyle}>
@@ -84,17 +74,17 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' style={linkStyle}>
-                  Services
+                <Link to='/pathways' className='nav-links' style={linkStyle}>
+                  Pathways
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' style={linkStyle}>
-                  Products
+                <Link to='/about-us' className='nav-links' style={linkStyle}>
+                  About Us
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/' className='nav-links-mobile' style={linkStyle}>
+                <Link to='/sign-up' className='nav-links' style={linkStyle}>
                   Sign Up
                 </Link>
               </li>

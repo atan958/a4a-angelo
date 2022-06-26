@@ -2,6 +2,7 @@
     position: fixed;
     width: 100vw;
     z-index: 3;
+    border: 0 !important;
 }
 
 .navbar-container {
@@ -11,6 +12,11 @@
     padding: 0% 5%;
     transition: 1.5s ease;
 }
+
+.navbar:before{content:none;}
+.navbar:after{content:none;}
+.navbar-container:before{content:none;}
+.navbar-container:after{content:none;}
 
 .navbar-logo img {
     transition: 1.5s ease;
