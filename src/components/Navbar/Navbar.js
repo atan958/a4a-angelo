@@ -102,13 +102,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/about-us' className='nav-links' style={linkStyle} onClick={minNav}>
-                  About Us
+                <Link to='/contacts' className='nav-links' style={linkStyle} onClick={minNav}>
+                  Contacts
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/sign-up' className='nav-links' style={linkStyle} onClick={minNav}>
-                  Sign Up
+                <Link to='/about-us' className='nav-links' style={linkStyle} onClick={minNav}>
+                  About Us
                 </Link>
               </li>
             </ul>

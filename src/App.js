@@ -7,9 +7,11 @@ import {
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
-import AboutUs from './components/Pages/AboutUs';
 import Home from './components/Pages/Home';
 import Pathways from './components/Pages/Pathways';
+import AboutUs from './components/Pages/AboutUs';
+import Contacts from './components/Pages/Contacts';
+
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/pathways" element={<Pathways/>}/>
           <Route path="/about-us" element={<AboutUs/>}/>
+          <Route path="/contacts" element={<Contacts/>}/>
         </Routes>
       </Router>  
   );
