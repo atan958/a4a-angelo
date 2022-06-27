@@ -1,0 +1,50 @@
+.social-proof {
+    background-image: linear-gradient(to right, rgb(204, 161, 61),#3D65CC);
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.vision-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vision-container p {
+    width: 60%;
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
+.proof-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 4%;
+}
+
+.proof {
+    width: 200px;
+    text-align: center;
+}
+
+.proof h1 {
+    font-weight: 500;
+    font-size: 48px;
+    color: white;
+}
+
+.proof h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.proof-icon {
+    filter: invert(100%);
+    margin:0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}

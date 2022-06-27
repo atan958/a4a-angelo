@@ -28,7 +28,7 @@ const ImageSlider = () => {
 
     return (
         <div className='slider'>
-            <h1 className='slider-title'>
+            <h1>
                 Hear from some of our past students...
             </h1>
             <div className='slider-container'>

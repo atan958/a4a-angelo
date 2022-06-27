@@ -85,7 +85,7 @@ const Navbar = () => {
   
   return (
     <>
-        <nav className="navbar" >
+        <nav className="navbar" style={{boxShadow: pastScrollPoint && '0 2px 4px 0 rgba(0,0,0,0.2)'}}>
           <div className="navbar-container" style={{backgroundColor: pastScrollPoint && `rgba(204,164,61,${opacity})`}}>
             <Link to='/' className='navbar-logo'>
               <img src={onHome ? (pastScrollPoint ? logoB : logoW) : logoB} style={{height: onHome ? (pastScrollPoint ? '80px' : '140px') : '80px'}}></img>
