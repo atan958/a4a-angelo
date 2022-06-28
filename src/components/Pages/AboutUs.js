@@ -2,8 +2,10 @@ import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div className="to-be-deleted" style={{padding:'500px 650px'}}>
-        <div style={{padding:'', fontWeight:'600', fontSize:'48px', width: '600px', backgroundColor: 'grey', textAlign: 'center'}}>THIS IS THE ABOUT US PAGE</div>
+    <div className="to-be-deleted">
+        <div style={{padding:'', fontWeight:'600', fontSize:'48px', width: '600px', textAlign: 'center'}}>
+          THIS IS THE <span>ABOUT US</span> PAGE
+        </div>
     </div>
   )
 }
