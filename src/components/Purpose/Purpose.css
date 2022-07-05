@@ -1,0 +1,52 @@
+.purpose {
+    margin:0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    row-gap: 100px;
+
+    background-color: white;
+}
+
+.purpose h1 {
+    padding: 120px 0 0 0;
+}
+
+.purpose .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    cursor: default;
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+
+}
+
+.container .row .entry {
+    display: flex;
+    align-items: center;
+    column-gap: 2%;
+    width: 35%;
+}
+
+.container .row .entry img {
+    height: 250px;
+}
+
+.container .row .entry p {
+    font-size: 24px;
+    width: 64%;
+}
+
+.container .row .entry.left {
+    justify-content: end;
+
+}

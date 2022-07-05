@@ -1,9 +1,10 @@
 import React from 'react'
 
 import Hero from '..//Hero/Hero'
-import Footer from '../Footer/Footer'
 import ImageSlider from '../ImageSlider/ImageSlider'
 import Posts from '../Posts/Posts'
+import Programs from '../Programs/Programs'
+import Purpose from '../Purpose/Purpose'
 import SocialProof from '../SocialProof/SocialProof'
 
 const Home = () => {
@@ -11,9 +12,10 @@ const Home = () => {
     <>
         <Hero />
         <SocialProof />
+        <Purpose />
+        <Programs />
         <ImageSlider />
         <Posts />
-        <Footer />
     </>
   )
 }

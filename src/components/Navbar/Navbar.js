@@ -12,6 +12,11 @@ const linkStyleW = {
   textDecoration: 'none',
   fontSize: '20px',
   fontWeight: '400',
+  height: '100%',
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 };
 
 const linkStyleB = {
@@ -19,6 +24,11 @@ const linkStyleB = {
   textDecoration: 'none',
   fontSize: '20px',
   fontWeight: '400',
+  height: '100%',
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
 };
 
 const Navbar = () => {

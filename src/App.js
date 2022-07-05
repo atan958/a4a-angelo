@@ -7,6 +7,7 @@ import {
 
 import './App.css';
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer';
 import Home from './components/Pages/Home';
 import Pathways from './components/Pages/Pathways';
 import AboutUs from './components/Pages/AboutUs';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/about-us" element={<AboutUs/>}/>
           <Route path="/contacts" element={<Contacts/>}/>
         </Routes>
+        <Footer />
       </Router>  
   );
 }

@@ -1,0 +1,9 @@
+.programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 40vh;
+    background-color: red;
+    background-color: rgb(236, 228, 204);
+}
